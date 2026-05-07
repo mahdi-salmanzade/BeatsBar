@@ -1,0 +1,12 @@
+.build/
+.swiftpm/
+.DS_Store
+*.xcodeproj/
+*.dSYM/
+src/.venv/
+research/captures/sysdiagnose_*/
+*.pklg
+build/
+DerivedData/
+interposer/libaacp_unlock.dylib
+*.tar.gz
