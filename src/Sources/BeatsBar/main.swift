@@ -15,6 +15,10 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     }
 }
 
+// Enforce single-instance BEFORE setting up AppKit — otherwise the duplicate
+// briefly grabs an NSStatusItem and you see flicker.
+SingleInstance.acquireOrExit()
+
 let app = NSApplication.shared
 let delegate = AppDelegate()
 app.delegate = delegate
